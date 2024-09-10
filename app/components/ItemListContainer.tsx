@@ -32,7 +32,7 @@ const ItemList = () => {
         <SortDropdown sortMethod={sortMethod} setSortMethod={setSortMethod} />
         }
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 gap-4">
           {handleSort(sortMethod, items).map((item, index) => (
             <ItemCard key={index} item={item} />
           ))}
